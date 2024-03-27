@@ -4,7 +4,7 @@ import {
 	addContact,
 	deleteContact,
 	changeContact,
-} from './contactsOps'
+} from './contactsOps.js'
 
 const contactsSlice = createSlice({
 	name: 'contacts',
