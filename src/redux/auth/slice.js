@@ -16,7 +16,7 @@ const authSlice = createSlice({
 	extraReducers: builder =>
 		builder
 			.addCase(register.pending, state => {
-				state.isLoggedIn = true
+				state.isLoggedIn = false
 			})
 			.addCase(register.fulfilled, (state, action) => {
 				state.user = action.payload.user
@@ -40,7 +40,7 @@ const authSlice = createSlice({
 				state.error = action.payload
 			})
 			.addCase(logOut.pending, state => {
-				state.isLoggedIn = true
+				state.isLoggedIn = false
 			})
 			.addCase(logOut.fulfilled, state => {
 				state.user = {
