@@ -21,7 +21,7 @@ const authSlice = createSlice({
 			.addCase(register.fulfilled, (state, action) => {
 				state.user = action.payload.user
 				state.token = action.payload.token
-				state.isLoggedIn = false
+				state.isLoggedIn = true
 			})
 			.addCase(register.rejected, (state, action) => {
 				state.isLoggedIn = false
@@ -33,7 +33,7 @@ const authSlice = createSlice({
 			.addCase(logIn.fulfilled, (state, action) => {
 				state.user = action.payload.user
 				state.token = action.payload.token
-				state.isLoggedIn = false
+				state.isLoggedIn = true
 			})
 			.addCase(logIn.rejected, (state, action) => {
 				state.isLoggedIn = false
