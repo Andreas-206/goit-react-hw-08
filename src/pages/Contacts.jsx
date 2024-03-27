@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import PageTitle from '../components/PageTitle/PageTitle'
 import ContactList from '../components/ContactList/ContactList'
-import { fetchContacts } from '../redux/contacts/contactsOps'
+import { fetchContacts } from '../redux/contacts/contactsOps.js'
 import { selectLoading } from '../redux/selectors'
 
 const Contacts = () => {
