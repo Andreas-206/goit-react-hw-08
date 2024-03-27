@@ -14,8 +14,7 @@ const LoginPage = lazy(() => import('./pages/LogIn.jsx'))
 const RegisterPage = lazy(() => import('./pages/Register.jsx'))
 const ContactsPage = lazy(() => import('./pages/Contacts.jsx'))
 
-const App = () => 
-
+const App = () => {
 	return (
 		<Layout>
 			<Suspense fallback={null}>
@@ -32,18 +31,18 @@ const App = () =>
 
 export default App
 
-	// const dispatch = useDispatch()
-	// const contacts = useSelector(selectContacts)
+// const dispatch = useDispatch()
+// const contacts = useSelector(selectContacts)
 
-	// useEffect(() => {
-	// 	dispatch(fetchContacts())
-	// }, [dispatch])
+// useEffect(() => {
+// 	dispatch(fetchContacts())
+// }, [dispatch])
 
-	{
-		/* <div className='app-container'>
+{
+	/* <div className='app-container'>
 			<h1 className='title'>Phonebook</h1>
 			<ContactForm />
 			{contacts.length === 0 ? <b>Add contact</b> : <SearchBox />}
 			<ContactList />
 		</div> */
-	}
+}
