@@ -1,6 +1,6 @@
 import { IoMdPerson } from 'react-icons/io'
 import { FaPhone } from 'react-icons/fa'
-import { deleteContact } from '../../redux/contacts/operations'
+import { deleteContact } from '../../redux/contacts/operations.js'
 import { useDispatch } from 'react-redux'
 import css from './Contact.module.css'
 
