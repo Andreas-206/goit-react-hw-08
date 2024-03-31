@@ -6,6 +6,7 @@ import { PrivateRoute } from './PrivateRoute.jsx'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectIsRefreshing } from './redux/auth/selectors.js'
 import { refreshUser } from './redux/auth/operations.js'
+import { Toaster } from 'react-hot-toast'
 import './App.css'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
@@ -53,6 +54,7 @@ const App = () => {
 					</Routes>
 				</Suspense>
 			)}
+			<Toaster />
 		</Layout>
 	)
 }

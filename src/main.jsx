@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './App.css'
 import { Provider } from 'react-redux'
-import { store, persistor } from './redux/store.js'
+import { store, persistor } from './redux/store'
 import { BrowserRouter } from 'react-router-dom'
 import { PersistGate } from 'redux-persist/integration/react'
+import 'modern-normalize'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
