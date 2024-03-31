@@ -1,5 +1,5 @@
-import contactsSlice from './contacts/contactsSlice'
-import filtersSlice from './filtersSlice'
+import contactsSlice from './contacts/slice'
+import filtersSlice from './filters/slice'
 import authSlice from './auth/slice'
 
 export const rootReducer = {
