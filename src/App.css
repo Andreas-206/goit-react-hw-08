@@ -78,3 +78,10 @@ button:focus-visible {
 .title {
 	margin-left: 70px;
 }
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    flex-direction: column;
