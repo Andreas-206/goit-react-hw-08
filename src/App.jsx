@@ -1,13 +1,11 @@
 import { Suspense, lazy } from 'react'
-// import ContactForm from './components/ContactForm/ContactForm'
-// import SearchBox from './components/SearchBox/SearchBox'
-// import ContactList from './components/ContactList/ContactList'
-// import { useSelector, useDispatch } from 'react-redux'
-// import { selectContacts } from './redux/selectors'
-// import { fetchContacts } from './redux/contactsOps'
 import Layout from './components/Layout/Layout'
 import { Routes, Route } from 'react-router-dom'
+import { RestrictedRoute } from './RestrictedRoute.jsx'
+import { PrivateRoute } from './PrivateRoute.jsx'
+import { useDispatch, useSelector } from 'react-redux'
 import './App.css'
+import { useDispatch } from 'react-redux'
 
 const HomePage = lazy(() => import('./pages/Home.jsx'))
 const LoginPage = lazy(() => import('./pages/LogIn.jsx'))
