@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit'
-import { Register } from '../register'
+import { Register } from '../selectors'
 import { selectNameFilter } from '../filters/slice'
 import { selectContacts } from './slice'
 
