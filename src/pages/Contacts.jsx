@@ -4,8 +4,8 @@ import PageTitle from '../components/PageTitle/PageTitle'
 import ContactForm from '../components/ContactForm/ContactForm'
 import ContactList from '../components/ContactList/ContactList'
 import SearchBox from '../components/SearchBox/SearchBox'
-import { selectFilteredContacts } from '../redux/selectors'
-import { fetchContact } from '../redux/contacts/selectors'
+import { selectFilteredContacts } from '../redux/contacts/selectors'
+import { fetchContact } from '../redux/contacts/operations'
 
 const Contacts = () => {
 	const dispatch = useDispatch()
