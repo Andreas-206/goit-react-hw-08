@@ -11,7 +11,7 @@ import './App.css'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
 const Login = lazy(() => import('./pages/LogIn.jsx'))
-const Register = lazy(() => import('./pages/Register.jsx'))
+const Register = lazy(() => import('./pages/Registration.jsx'))
 const Contacts = lazy(() => import('./pages/Contacts.jsx'))
 
 const App = () => {
