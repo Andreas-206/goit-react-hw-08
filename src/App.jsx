@@ -10,7 +10,7 @@ import { Toaster } from 'react-hot-toast'
 import './App.css'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
-const Login = lazy(() => import('./pages/LogIn.jsx'))
+const Login = lazy(() => import('./pages/Login.jsx'))
 const Register = lazy(() => import('./pages/Registration.jsx'))
 const Contacts = lazy(() => import('./pages/Contacts.jsx'))
 
