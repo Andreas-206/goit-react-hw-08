@@ -1,4 +1,4 @@
-import LoginForm from '../components/Login/Login'
+import LoginForm from '../components/LoginForm/LoginForm'
 import PageTitle from '../components/PageTitle/PageTitle'
 import { Link } from 'react-router-dom'
 
