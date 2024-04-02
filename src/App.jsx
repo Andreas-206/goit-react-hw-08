@@ -27,7 +27,7 @@ const App = () => {
 			{isRefreshing ? (
 				<b>Refreshing user, please wait...</b>
 			) : (
-				<Suspense fallback={<>loding</>}>
+				<Suspense fallback={<>loading</>}>
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route

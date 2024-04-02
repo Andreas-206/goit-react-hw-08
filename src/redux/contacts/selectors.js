@@ -1,7 +1,8 @@
 import { createSelector } from '@reduxjs/toolkit'
-import { Register } from '../selectors'
-import { selectNameFilter } from '../filters/slice'
+import { selectNameFilter } from '../filters/selectors'
 import { selectContacts } from './slice'
+
+export const Register = value => value.toLocaleLowerCase()
 
 export const selectFilteredContacts = createSelector(
 	[selectContacts, selectNameFilter],
