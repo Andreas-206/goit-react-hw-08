@@ -11,7 +11,7 @@ import './App.css'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
 const Login = lazy(() => import('./pages/Login.jsx'))
-const Register = lazy(() => import('./pages/Registration.jsx'))
+const Registration = lazy(() => import('./pages/Registration.jsx'))
 const Contacts = lazy(() => import('./pages/Contacts.jsx'))
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
 							path='/register'
 							element={
 								<RestrictedRoute
-									component={<Register />}
+									component={<Registration />}
 									redirectTo='/contacts'
 								/>
 							}
