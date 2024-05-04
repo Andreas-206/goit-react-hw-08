@@ -2,6 +2,7 @@ import { Field, Form, Formik } from 'formik'
 import { useDispatch } from 'react-redux'
 import { addContact } from '../../redux/contacts/operations'
 import css from './ContactForm.module.css'
+import { nanoid } from 'nanoid'
 import clsx from 'clsx'
 import * as Yup from 'yup'
 
@@ -30,9 +31,11 @@ const ContactForm = () => {
 			}}
 			validationSchema={validationSchema}
 			onSubmit={(values, { resetForm }) => {
+				const id = nanoid()
 				const newContact = {
 					name: values.name,
 					number: values.number,
+					id: id,
 				}
 				dispatch(addContact(newContact))
 				resetForm()

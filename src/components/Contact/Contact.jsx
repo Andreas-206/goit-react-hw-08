@@ -7,7 +7,7 @@ import css from './Contact.module.css'
 const Contact = ({ contact }) => {
 	const dispatch = useDispatch()
 	const onDelete = () => {
-		dispatch(deleteContact(contact._id))
+		dispatch(deleteContact(contact.id))
 	}
 	return (
 		<li className={css.contact}>
